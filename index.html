@@ -8,9 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="banner.css">
 </head>
 <body>
     <header class="cabeçalho">
@@ -44,7 +43,71 @@
         <input type="search" class="banner__pesquisa" placeholder="Qual experimento deseja ver?"> 
     </section>
 
-
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/Carrossel/ApacheKafka.svg" alt="Livro do Apache Kafka">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/Carrossel/Javascript.svg" alt="Livro do JS biruleibe">
+            </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/Portugol.svg" alt="Potugol gol gol">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/Arquitetura.svg" alt="Arquitetura bebe">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/Gestão.svg" alt="#">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/Liderança.svg" alt="#">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/MetricasAgeis.svg" alt="#">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/Nodejs.svg" alt="#">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/ReactNative.svg" alt="#">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/Tuning.svg" alt="#">
+             </div>
+             <div class="swiper-slide">
+                <img src="img/Carrossel/UX.svg" alt="#">
+             </div>
+        </div>
+        <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+  
+         <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+  
+         <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script> 
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+             el: '.swiper-pagination',
+            type: 'bullets',
+            },
+        });
+    </script>
 
 </body>
 </html>

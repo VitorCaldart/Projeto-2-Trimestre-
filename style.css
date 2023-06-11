@@ -1,0 +1,15 @@
+@import url(Styles/header.css);
+@import url(Styles/banner.css);
+@import url(Styles/reset.css);
+@import url(Styles/Carrossel.css);
+:root { 
+    --cor-de-fundo: #ebecee;
+    --branco: #FFFFFF; 
+    --laranja: #f1a306;
+    --azul-degrade: linear-gradient(98deg, #01182b 35.5%, #06395e 65.5%);
+}
+body { background-color:var(--cor-de-fundo);
+    font-family: 'Poppins', 'sans-serif'; 
+    font-size-adjust: 16px;
+    font-weight: 400;
+}
